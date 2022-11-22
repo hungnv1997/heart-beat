@@ -12,7 +12,7 @@ const camera = new THREE.PerspectiveCamera(
 );
 const loader = new THREE.FontLoader();
 
-loader.load("../font/Roboto_Light_Regular.json", function (font) {
+loader.load("https://hungnv1997.github.io/heart-beat/font/Roboto_Light_Regular.json", function (font) {
   const geometry = new THREE.TextGeometry("Thương Anh", {
     font: font,
     size: 0.05,
