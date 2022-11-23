@@ -16,15 +16,15 @@ loader.load("https://hungnv1997.github.io/heart-beat/font/Roboto_Light_Regular.j
   const geometry = new THREE.TextGeometry("Thương Anh", {
     font: font,
     size: 0.05,
-    height: 0.001,
+    height: 0.01,
     curveSegments: 4,
     bevelEnabled: true,
-    bevelThickness: 0.02,
-    bevelSize: 0.01,
-    bevelSegments: 2,
+    bevelThickness: 0.01,
+    bevelSize: 0.003,
+    bevelSegments: 0.5,
   });
   geometry.center();
-  const materials = new THREE.MeshNormalMaterial();
+  const materials = new THREE.MeshBasicMaterial({ color: 0xff77ae });
   var mesh = new THREE.Mesh(geometry, materials);
 
   scene.add(mesh);
